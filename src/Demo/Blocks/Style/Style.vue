@@ -1,8 +1,10 @@
 <template>
   <div>
-    <h1>Sticky</h1>
+    <h1>Style</h1>
 
-    <button @click="open">Sticky</button>
+    <button @click="open(style)" v-for="style in styles">
+      {{style}}
+    </button>
 
     <div class="row">
       <div class="col-sm-6 col-md-4 col-lg-3">
@@ -15,14 +17,19 @@
 </template>
 
 <script>
-import Snippet from './Sticky.md'
+import Snippet from './Style.md'
 export default {
+  data() {
+    return {
+      styles: ['info', 'success', 'warning', 'error']
+    }
+  },
   methods: {
-    open() {
+    open(style) {
       this.$notify({
-        title: 'Sticky Notify',
-        text: 'This is sticky notify',
-        sticky: true,
+        title: 'Style Notify',
+        text: style,
+        style: style,
       })
     },
   },

@@ -16,6 +16,7 @@ import jump from 'jump.js'
 import Prismjs from 'prismjs'
 import BaseBlock from 'Demo/Blocks/Base/Base.vue'
 import OptionsBlock from 'Demo/Blocks/Options/Options.vue'
+import StyleBlock from 'Demo/Blocks/Style/Style.vue'
 import StickyBlock from 'Demo/Blocks/Sticky/Sticky.vue'
 export default {
   data() {
@@ -24,6 +25,7 @@ export default {
       blocks: [
         { name: 'Base', id: 'base' },
         { name: 'Options', id: 'options' },
+        { name: 'Style', id: 'style' },
         { name: 'Sticky', id: 'sticky' },
       ]
     }
@@ -60,7 +62,13 @@ export default {
   components: {
     BaseBlock,
     OptionsBlock,
+    StyleBlock,
     StickyBlock,
   },
 }
 </script>
+
+<style lang="sass" type="text/sass">
+button
+  margin-right: 10px
+</style>

@@ -24,7 +24,6 @@ export default {
           in_class: 'flipInX',
           out_class: 'flipOutX',
         },
-        defaultDelay: 300,
       }
     }
   },

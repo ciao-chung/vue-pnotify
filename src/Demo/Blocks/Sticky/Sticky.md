@@ -1,7 +1,7 @@
 ```javascript
 this.$notify({
-  title: 'Foo',
-  text: 'bar...',
-  icon: 'fa fa-info',
+  title: 'Sticky Notify',
+  text: 'This is sticky notify',
+  sticky: true,
 })
 ```
