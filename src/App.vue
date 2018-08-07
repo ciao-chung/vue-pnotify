@@ -19,6 +19,12 @@ export default {
     return {
       options: {
         defaultStyle: 'success',
+        animateConfig: {
+          animate: true,
+          in_class: 'flipInX',
+          out_class: 'flipOutX',
+        },
+        defaultDelay: 300,
       }
     }
   },

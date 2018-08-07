@@ -14,16 +14,17 @@
 <script>
 import jump from 'jump.js'
 import Prismjs from 'prismjs'
-// import PrismjsLoadLanguages from 'prismjs/components/index.js'
 import BaseBlock from 'Demo/Blocks/Base/Base.vue'
 import OptionsBlock from 'Demo/Blocks/Options/Options.vue'
+import StickyBlock from 'Demo/Blocks/Sticky/Sticky.vue'
 export default {
   data() {
     return {
-      navHeight: 56,
+      navHeight: 50,
       blocks: [
         { name: 'Base', id: 'base' },
         { name: 'Options', id: 'options' },
+        { name: 'Sticky', id: 'sticky' },
       ]
     }
   },
@@ -37,7 +38,6 @@ export default {
   methods: {
     highlightSnippet() {
       this.$nextTick(() => {
-        // PrismjsLoadLanguages(['javascript', 'php', 'sass', 'scss', 'bash'])
         Prismjs.highlightAll()
       })
     },
@@ -52,9 +52,15 @@ export default {
       })
     },
   },
+  watch: {
+    $route() {
+      this.scrollToBlock()
+    },
+  },
   components: {
     BaseBlock,
     OptionsBlock,
+    StickyBlock,
   },
 }
 </script>

@@ -14,10 +14,10 @@ export default {
   },
   data() {
     return {
-      animateConfig: {
+      defaultAnimateConfig: {
         animate: true,
-        in_class: 'flipInX',
-        out_class: 'flipOutX',
+        in_class: 'bounceIn',
+        out_class: 'bounceOut',
       },
     }
   },
@@ -43,9 +43,12 @@ export default {
         text: options.text || '',
         type: options.style || 'success',
         icon: options.icon || null,
-        delay: options.delay || this.defaultDelay,
+        sticky: options.sticky || false,
         animate: this.animateConfig,
       }
+
+      if(!result.sticky) result.delay = options.delay || this.defaultDelay
+
       return result
     },
     notify(options) {
@@ -73,6 +76,11 @@ export default {
       if(!this.options) return 8000
       if(!this.options.defaultDelay) return 8000
       return this.options.defaultDelay
+    },
+    animateConfig() {
+      if(!this.options) return this.defaultAnimateConfig
+      if(!this.options.animateConfig) return this.defaultAnimateConfig
+      return this.options.animateConfig
     },
   },
 }
