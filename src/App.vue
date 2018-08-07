@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="container">
     <ComponentNav></ComponentNav>
     <router-view class="route-view"></router-view>
     <AwesomeNotify
@@ -36,7 +36,4 @@ export default {
 <style src="bootstrap/dist/css/bootstrap.css"></style>
 <style src="font-awesome/css/font-awesome.min.css"></style>
 <style src="prismjs/themes/prism.css"></style>
-<style lang="sass" type="text/sass" scoped>
-.route-view
-  padding: 20px
-</style>
+<style lang="sass" type="text/sass" scoped></style>

@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="row">
 
-    <div class="block"
+    <div class="block col-xs-12 col-sm-12 col-md-6 col-lg-6"
       v-for="block in blocks"
       :key="'block'+block.name"
       :block="block.id">

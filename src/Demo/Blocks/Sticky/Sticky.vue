@@ -4,12 +4,8 @@
 
     <button @click="open">Sticky</button>
 
-    <div class="row">
-      <div class="col-sm-6 col-md-4 col-lg-3">
-        <div class="markdown-container">
-          <Snippet></Snippet>
-        </div>
-      </div>
+    <div>
+      <Snippet></Snippet>
     </div>
   </div>
 </template>
