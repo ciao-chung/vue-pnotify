@@ -1,0 +1,9 @@
+{
+  "name": "vue-pnotify",
+  "version": "1.0.0",
+  "description": "A Vue PNotify Plugin",
+  "main": "dist/vue-pnotify.js",
+  "repository": "https://github.com/ciao-chung/vue-pnotify",
+  "author": "Ciao <ciao0958@gmail.com>",
+  "license": "MIT"
+}
