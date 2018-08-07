@@ -1,8 +1,9 @@
 <template>
   <div id="app">
-    <router-view/>
+    <ComponentNav></ComponentNav>
+    <router-view class="route-view"></router-view>
     <AwesomeNotify
-      :options="options"/>
+      :options="options"></AwesomeNotify>
   </div>
 </template>
 
@@ -10,6 +11,7 @@
 import "bootstrap/dist/js/bootstrap.js"
 import Vue from 'vue'
 import AwesomeNotify from 'Plugins/Notify/Installer.js'
+import ComponentNav from 'Components/Nav'
 Vue.use(AwesomeNotify)
 export default {
   name: 'App',
@@ -20,9 +22,16 @@ export default {
       }
     }
   },
+  components: {
+    ComponentNav,
+  },
 }
 </script>
 
 <style src="bootstrap/dist/css/bootstrap.css"></style>
 <style src="font-awesome/css/font-awesome.min.css"></style>
-<style lang="sass" type="text/sass" scoped></style>
+<style src="prismjs/themes/prism.css"></style>
+<style lang="sass" type="text/sass" scoped>
+.route-view
+  padding: 20px
+</style>
