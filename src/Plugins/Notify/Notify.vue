@@ -1,10 +1,11 @@
 <template></template>
 
 <script>
-import 'pnotify/dist/pnotify.js'
+import PNotify from 'pnotify/dist/pnotify.js'
 import 'pnotify/dist/pnotify.animate.js'
 import 'pnotify/dist/pnotify.buttons.js'
 import { events } from 'Plugins/Events.js'
+window.PNotify = PNotify
 export default {
   props: {
     options: {

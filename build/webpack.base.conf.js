@@ -85,7 +85,6 @@ module.exports = {
       jQuery: "jquery/dist/jquery",
       "window.jQuery": "jquery",
       "window.$": "jquery",
-      PNotify: 'pnotify',
     })
   ],
   node: {
