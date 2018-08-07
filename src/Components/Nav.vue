@@ -28,6 +28,7 @@ export default {
     return {
       blocks: [
         { label: 'Base', name: 'base' },
+        { label: 'Options', name: 'options' },
       ]
     }
   },

@@ -16,12 +16,14 @@ import jump from 'jump.js'
 import Prismjs from 'prismjs'
 // import PrismjsLoadLanguages from 'prismjs/components/index.js'
 import BaseBlock from 'Demo/Blocks/Base/Base.vue'
+import OptionsBlock from 'Demo/Blocks/Options/Options.vue'
 export default {
   data() {
     return {
       navHeight: 56,
       blocks: [
-        { name: 'Base', id: 'base' }
+        { name: 'Base', id: 'base' },
+        { name: 'Options', id: 'options' },
       ]
     }
   },
@@ -52,6 +54,7 @@ export default {
   },
   components: {
     BaseBlock,
+    OptionsBlock,
   },
 }
 </script>
