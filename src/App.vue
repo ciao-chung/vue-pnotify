@@ -2,17 +2,17 @@
   <div id="app" class="container">
     <ComponentNav></ComponentNav>
     <router-view class="route-view"></router-view>
-    <AwesomeNotify
-      :options="options"></AwesomeNotify>
+    <VuePNotify
+      :options="options"></VuePNotify>
   </div>
 </template>
 
 <script>
 import "bootstrap/dist/js/bootstrap.js"
 import Vue from 'vue'
-import AwesomeNotify from 'Plugins/Notify/Installer.js'
+import VuePNotify from 'Plugins/Notify/Installer.js'
 import ComponentNav from 'Components/Nav'
-Vue.use(AwesomeNotify)
+Vue.use(VuePNotify)
 export default {
   name: 'App',
   data() {
