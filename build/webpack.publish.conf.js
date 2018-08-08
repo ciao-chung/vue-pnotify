@@ -25,7 +25,7 @@ let webpackConfig = merge(baseWebpackConfig, {
   entry: './src/Plugins/Notify/Installer.js',
   output: {
     path: config.publish.assetsRoot,
-    filename: 'dist/vue-notify.js',
+    filename: 'dist/vue-pnotify.js',
     libraryTarget: 'umd',
   },
   externals: [
@@ -47,7 +47,7 @@ let webpackConfig = merge(baseWebpackConfig, {
     }),
     // extract css into its own file
     new ExtractTextPlugin({
-      filename: 'dist/vue-notify.css',
+      filename: 'dist/vue-pnotify.css',
     }),
     // Compress extracted CSS. We are using this plugin so that possible
     // duplicated CSS from different components can be deduped.
@@ -60,15 +60,6 @@ let webpackConfig = merge(baseWebpackConfig, {
     new webpack.HashedModuleIdsPlugin(),
     // enable scope hoisting
     new webpack.optimize.ModuleConcatenationPlugin(),
-
-    // copy custom static assets
-    new CopyWebpackPlugin([
-      {
-        from: path.resolve(__dirname, '../static'),
-        to: config.publish.assetsSubDirectory,
-        ignore: ['.*']
-      }
-    ]),
 
     new WebpackShellPlugin({
       onBuildStart: [
