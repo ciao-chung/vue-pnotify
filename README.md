@@ -8,6 +8,7 @@
 * pnotify
 * animate.css
 * bootstrap 3/4
+* font-awesome(If you used icon option)
 
 ## Required
 
@@ -40,14 +41,12 @@ Install VuePNotify component in App.vue
 
 <script>
 import Vue from 'vue'
-import VuePNotify from 'Plugins/Notify/Installer.js'
+import VuePNotify from 'vue-pnotify'
 Vue.use(VuePNotify)
 </script>
 
 <!--Remember import style file in App.vue-->
 <style src="bootstrap/dist/css/bootstrap.css"></style>
 <style src="font-awesome/css/font-awesome.min.css"></style>
-<style src="prismjs/themes/prism.css"></style>
-<style lang="sass" type="text/sass" scoped></style>
 ```
 
