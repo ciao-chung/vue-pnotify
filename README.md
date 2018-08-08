@@ -67,6 +67,7 @@ Vue.use(VuePNotify)
 </script>
 
 <!--Remember import style file in App.vue-->
+<style src="vue-pnotify/dist/vue-pnotify.css"></style>
 <style src="bootstrap/dist/css/bootstrap.css"></style>
 <style src="font-awesome/css/font-awesome.min.css"></style>
 ```
