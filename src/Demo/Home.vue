@@ -18,6 +18,7 @@ import BaseBlock from 'Demo/Blocks/Base/Base.vue'
 import OptionsBlock from 'Demo/Blocks/Options/Options.vue'
 import StyleBlock from 'Demo/Blocks/Style/Style.vue'
 import StickyBlock from 'Demo/Blocks/Sticky/Sticky.vue'
+import AnimateBlock from 'Demo/Blocks/Animate/Animate.vue'
 export default {
   data() {
     return {
@@ -27,6 +28,7 @@ export default {
         { name: 'Options', id: 'options' },
         { name: 'Style', id: 'style' },
         { name: 'Sticky', id: 'sticky' },
+        { name: 'Animate', id: 'animate' },
       ]
     }
   },
@@ -64,6 +66,7 @@ export default {
     OptionsBlock,
     StyleBlock,
     StickyBlock,
+    AnimateBlock,
   },
 }
 </script>

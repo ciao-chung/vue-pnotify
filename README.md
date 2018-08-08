@@ -91,6 +91,8 @@ this.$notify({
 * style(String): Style, it has four style(info, success, warning, error), default is info.
 * delay(Number): The delay time(ms) of notification, default is 8000ms.
 * sticky(Boolean): Make notification will not be auto close, default is false.
+* animite(Object): configuration of pnotify, default is bounceIn/bounceOut.
+  * See [PNotify Animate Module](https://github.com/sciactive/pnotify#animate-module).
 
 ## Setup default options
 

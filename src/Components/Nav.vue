@@ -31,6 +31,7 @@ export default {
         { label: 'Options', name: 'options' },
         { label: 'Style', name: 'style' },
         { label: 'Sticky', name: 'sticky' },
+        { label: 'Custom Animate', name: 'animate' },
       ]
     }
   },

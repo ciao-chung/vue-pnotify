@@ -45,7 +45,7 @@ export default {
         type: options.style || 'success',
         icon: options.icon || null,
         hide: options.sticky == true ? false : true,
-        animate: this.animateConfig,
+        animate: options.animate || this.animateConfig,
       }
 
       if(result.hide) result.delay = options.delay || this.defaultDelay
