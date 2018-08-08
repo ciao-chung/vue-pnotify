@@ -5,5 +5,10 @@
   "main": "dist/vue-pnotify.js",
   "repository": "https://github.com/ciao-chung/vue-pnotify",
   "author": "Ciao <ciao0958@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "animate.css": "^3.7.0",
+    "jquery": "^3.3.1",
+    "pnotify": "3.2.1"
+  }
 }
