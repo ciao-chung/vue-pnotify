@@ -2,6 +2,10 @@
 
 > A Vue PNotify Plugin
 
+## Demo
+
+[https://ciao-chung.github.io/vue-pnotify/#/](https://ciao-chung.github.io/vue-pnotify/#/)
+
 ## Dependencies
 
 * jquery

@@ -44,11 +44,11 @@ export default {
         text: options.text || '',
         type: options.style || 'success',
         icon: options.icon || null,
-        sticky: options.sticky || false,
+        hide: options.sticky == true ? false : true,
         animate: this.animateConfig,
       }
 
-      if(!result.sticky) result.delay = options.delay || this.defaultDelay
+      if(result.hide) result.delay = options.delay || this.defaultDelay
 
       return result
     },
