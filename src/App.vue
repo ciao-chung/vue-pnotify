@@ -8,7 +8,6 @@
 </template>
 
 <script>
-import "bootstrap/dist/js/bootstrap.js"
 import Vue from 'vue'
 import VuePNotify from 'Plugins/Notify/Installer.js'
 import ComponentNav from 'Components/Nav'
