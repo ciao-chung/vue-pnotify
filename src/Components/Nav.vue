@@ -2,8 +2,9 @@
   <nav class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a class="navbar-brand">
-          Vue PNotify
+        <a class="navbar-brand" href="https://github.com/ciao-chung/vue-pnotify" target="_blank">
+          <i class="fa fa-github"></i>
+          <span>Vue PNotify</span>
         </a>
       </div>
 
